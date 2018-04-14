@@ -15,5 +15,25 @@ module.exports = (app) => {
          res.render('reg-selection');
      });
 
+    app.get('/doc-register', function(req, res) {
+        res.render('doc-reg-form');
+    });
+
+    app.get('/phar-register', function(req, res) {
+        res.render('phar-reg-form');
+    });
+
+    app.get('/new-patient', function(req, res) {
+        res.render('add-patient');
+    });
+
+    app.get('/new-medication', function(req, res) {
+        res.render('add-medication');
+    });
+
+    app.get('/show-patient', function(req, res) {
+        res.render('show-patient', {firstname: 'John', lastname: 'Doe', medication: 'Advil', quantity: 5});
+    });
+
 
 }

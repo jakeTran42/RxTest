@@ -1,0 +1,27 @@
+<h1>Patient's Record</h1>
+
+<style media="screen">
+  #box {
+    margin-bottom: 1cm;
+    border: 1px solid #FE7880;
+  }
+</style>
+
+<div class="row">
+  {{#each patient}}
+      <div class="col-sm-4">
+
+        <li class="list-group-item" id="box">
+
+          <a href="/games/{{this._id}}">
+              <h4><b><legend>{{this.firstname}} {{this.lastname}}</legend></b></h4>
+            <h4><b><legend>{{this.medication}} - {{this.quantity}}</legend></b></h4>
+          </a>
+
+            <h4> <b>Date - </b> {{this.createdAt}}</h4>
+        </li>
+
+      </div>
+
+  {{/each}}
+</div>

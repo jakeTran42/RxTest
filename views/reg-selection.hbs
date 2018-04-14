@@ -10,6 +10,15 @@
                              'body'
     }
 
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin: 0 !important;
+      padding: 0 !important;
+      max-width: 50px;
+      max-height: 50px;
+    }
+
     .header-nav {
         grid-area: nav;
         background-color: #222;
@@ -18,6 +27,7 @@
         justify-content: space-between;
         padding-left: 40px;
         padding-right: 40px;
+        color: white;
         align-items: center;
     }
 
@@ -35,7 +45,7 @@
     .reg-as-pharmacist {
         width: 40%;
         height: 80%;
-        background-color: #222;
+        background-color: #4D4D4D;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -55,7 +65,7 @@
     .reg-as-doctor {
         width: 40%;
         height: 80%;
-        background-color: #222;
+        background-color: #4D4D4D;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -103,6 +113,7 @@
 
 
 <div class="reg-selection-wrapper">
+
     <div class="header-nav">
         <h1>Logo</h1>
         <h1>Home</h1>
@@ -114,7 +125,7 @@
             <h1>Register as Pharmacist</h1>
             <p>Register as a pharmacist allows you to add and view patients infomation</p>
             <div class="register-phar-btn">
-              <a href="/" class="button">Register Now</a>
+              <a href="/phar-register" class="button">Register Now</a>
             </div>
         </div>
 
@@ -122,7 +133,7 @@
             <h1>Register as Doctor</h1>
             <p>Register as a doctor allows you to view patients infomation</p>
             <div class="register-doc-btn">
-              <a href="/" class="button">Register Now</a>
+              <a href="/doc-register" class="button">Register Now</a>
             </div>
         </div>
 
