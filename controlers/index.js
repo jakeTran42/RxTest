@@ -15,11 +15,11 @@ module.exports = (app) => {
          res.render('reg-selection');
      });
 
-    app.get('/doc-register', function(req, res) {
+    app.get('/new-doctor', function(req, res) {
         res.render('doc-reg-form');
     });
 
-    app.get('/phar-register', function(req, res) {
+    app.get('/new-pharmacist', function(req, res) {
         res.render('phar-reg-form');
     });
 
@@ -33,6 +33,10 @@ module.exports = (app) => {
 
     app.get('/show-patient', function(req, res) {
         res.render('show-patient', {firstname: 'John', lastname: 'Doe', medication: 'Advil', quantity: 5});
+    });
+
+    app.get('/login', function(req, res) {
+        res.render('login-form');
     });
 
 

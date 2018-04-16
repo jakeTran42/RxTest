@@ -74,6 +74,8 @@
     background-color:#34CACA;
 }
 
+/* EVERYTHING ABOVE THIS LINE CAN BE PUT INTO MAIN STYLESHEET */
+
 .verified-doc {
     display: flex;
     flex-direction: row;
@@ -83,7 +85,7 @@
 
 </form>
 <div class="form-style-8">
-  <h2>Register an Account</h2>
+  <h2>Register as Doctor Account</h2>
   <form method="POST" action="/doc-register">
     <input type="text" name="firstname" placeholder="First Name" />
     <input type="text" name="lastname" placeholder="Last Name">
@@ -93,7 +95,7 @@
     <input type="date" name="dob" placeholder="Date of Birth" />
     <input type="tel" name="phoneNumber" placeholder="Phone Number (123)-456-7890" />
     <div class="verified-doc">
-        <input name="NPI" placeholder="NPI Number" type="text" />
+        <input name="NPI" placeholder="NPI Number" type="number" />
         <input name="DEA" placeholder="DEA Number" type="text" />
     </div>
     <span>
