@@ -372,3 +372,7 @@ h5 {
     background-color: #222;
     color: white;
 }
+
+input {
+    text-align: center;
+}

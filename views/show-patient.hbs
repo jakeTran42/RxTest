@@ -62,10 +62,9 @@
 
   .modal-body {padding: 2px 16px;}
 
-  .modal-body h2 {
+  .modal-body h3 {
     border-right: 1px solid grey;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
   }
 
   .modal-footer {
@@ -120,10 +119,11 @@
       <div class="modal-body">
         <div class="separation-content">
           <div class="each-medication" style="display: flex; flex-direction: row; align-items: center;">
-            <h2>Name: {{medication}}</h1>
-            <h2>Dosage: {{dosage}} </h2>
-            <h2>Date Prescribed: {{date}}</h2>
-            <h2>Quantity: {{quantity}}</h2>
+            <h3>Name: {{medication}}</h3>
+            <h3>Dosage: {{dosage}} </h3>
+            <h3>Date Prescribed: {{date}}</h3>
+            <h3>Quantity: {{quantity}}</h3>
+            <h3>Prescriber's DEA: {{DEA}}</h3>
           </div>
         </div>
       </div>
@@ -135,13 +135,14 @@
   </div>
 
   <div class="patient-basic-info">
-    <h2>{{firstname}} {{lastname}}</h2>
+    <h2><button style="position: relative; width: 20px; height: 20px; border-radius: 50px; right: 180px; font-weight: bold;" onclick="goBack()" type="button" id="backBtn"><</button>{{firstname}} {{lastname}}</h2>
     <div class="dobAndMedication" style="display: flex; flex-direction: row; align-items: center;">
       <h3>DOB: {{birthday}}</h3>
       <button type="button" id="medicationBtn">See All Prescription</button>
     </div>
 
   </div>
+
 
 
 </div>
@@ -173,4 +174,8 @@
           modal.style.display = "none";
       }
   }
+
+  function goBack() {
+    window.history.back();
+    }
 </script>
