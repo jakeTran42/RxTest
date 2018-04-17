@@ -83,7 +83,7 @@
   <form method="POST" action="/add-patient">
     <input type="text" name="firstname" placeholder="Patient First Name" />
     <input type="text" name="lastname" placeholder="Patient Last Name">
-    <input onfocus="(this.type='date')" onblur="(this.type='text')" name="dob" placeholder="Date of Birth" />
+    <input required="" type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')" style="text-align: center;" name="dob"/>
     <span>
 
         <button type="submit" style="border-color: #6cc091; color: #6cc091"> Submit </button>
