@@ -127,7 +127,10 @@
         <h1>Search for Client by Entering Their Name and DOB</h1>
       <form class="patient-search-input" action="/">
           <div class="input-field">
-              <input id="name-field" placeholder="Enter Client Name" type="search" name="client-name" value="{{client-name}}">
+              <div class="nameField" style="">
+                <input id="firstname-field" placeholder="Client First Name" type="search" name="client-firstname">
+                <input id="lastname-field" placeholder="Client Last Name" type="search" name="client-lastname">
+              </div>
               <span></span>
               <input id="date-field" placeholder="Date of Birth" type="date" name="search-date">
               <span></span>

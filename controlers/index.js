@@ -32,12 +32,16 @@ module.exports = (app) => {
     });
 
     app.get('/show-patient', function(req, res) {
-        res.render('show-patient', {firstname: 'John', lastname: 'Doe', medication: 'Advil', quantity: 5});
+        res.render('show-patient', {firstname: 'John', lastname: 'Doe', birthday: '01/20/1996', quantity: 5, medication: 'Something', dosage: 5, date: '02/33/2112' });
     });
 
     app.get('/login', function(req, res) {
         res.render('login-form');
     });
+    //
+    // app.get('/show-patient', function(req, res) {
+    //     res.render('modal-view');
+    // });
 
 
 }
